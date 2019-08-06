@@ -20,7 +20,11 @@ import {
     MenuItemGroup,
     MenuItem,
     Collapse,
-    CollapseItem
+    CollapseItem,
+    // 输入框
+    Input,
+    // 按钮
+    Button,
 } from 'element-ui';
 
 export default () => {
@@ -30,5 +34,7 @@ export default () => {
         .use(Divider)
         .use(Collapse).use(CollapseItem)
         .use(Menu).use(Submenu).use(MenuItemGroup).use(MenuItem)
-        .use(Collapse).use(CollapseItem);
+        .use(Collapse).use(CollapseItem)
+        .use(Input)
+        .use(Button);
 }

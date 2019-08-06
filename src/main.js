@@ -4,6 +4,10 @@ import router from './router'
 import ElementUI from './element/index'
 ElementUI();
 
+// Vue继承axios
+import axios from 'axios'
+Vue.prototype.$axios = axios
+
 Vue.config.productionTip = false
 
 new Vue({
