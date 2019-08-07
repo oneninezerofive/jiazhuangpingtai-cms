@@ -25,6 +25,16 @@ import {
     Input,
     // 按钮
     Button,
+    // tabs
+    Tabs,
+    TabPane,
+    // 表格
+    Table,
+    TableColumn,
+    // 弹出框
+    Popover,
+    // 卡片
+    Card
 } from 'element-ui';
 
 export default () => {
@@ -36,5 +46,9 @@ export default () => {
         .use(Menu).use(Submenu).use(MenuItemGroup).use(MenuItem)
         .use(Collapse).use(CollapseItem)
         .use(Input)
-        .use(Button);
+        .use(Button)
+        .use(Tabs).use(TabPane)
+        .use(Table).use(TableColumn)
+        .use(Popover)
+        .use(Card);
 }

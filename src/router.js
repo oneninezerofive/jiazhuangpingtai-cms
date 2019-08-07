@@ -14,11 +14,13 @@ const routes = [{
     component: Home,
     // 嵌套路由，先进底部选项卡，再去找首页
     children: [{
+      // 首页进入
       name: 'shownow',
       // 第二层路由的path是没有/
       path: 'shownow',
       component: Shownow,
     }, {
+      // 优质团队
       name: 'team',
       // 第二层路由的path是没有/
       path: 'team',
