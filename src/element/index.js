@@ -34,7 +34,19 @@ import {
     // 弹出框
     Popover,
     // 卡片
-    Card
+    Card,
+    // 抽屉
+    Drawer,
+    // 表单
+    Form,
+    FormItem,
+    // 选项
+    Select,
+    Option,
+    // 对话框
+    Dialog,
+    // 上传
+    Upload
 } from 'element-ui';
 
 export default () => {
@@ -50,5 +62,10 @@ export default () => {
         .use(Tabs).use(TabPane)
         .use(Table).use(TableColumn)
         .use(Popover)
-        .use(Card);
+        .use(Card)
+        .use(Form).use(FormItem)
+        .use(Drawer)
+        .use(Select).use(Option)
+        .use(Dialog)
+        .use(Upload);
 }
