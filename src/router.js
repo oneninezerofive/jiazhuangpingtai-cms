@@ -1,20 +1,35 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-
+import Reception from './views/announcement/Reception'
+import Backstage from './views/announcement/Backstage'
+import onlineWorks from './views/works/onlineWorks'
 Vue.use(Router)
 
 const routes = [{
     name: 'Home',
     path: '/Home',
-    component: Home
+    component: Home,
     // 嵌套路由，先进底部选项卡，再去找首页
-    // children: [{
-    //   name: 'home',
-    //   // 第二层路由的path是没有/
-    //   path: 'home',
-    //   component: Home,
-    // }]
+    children: [{
+      name: 'Reception',
+      // 第二层路由的path是没有/
+      path: 'Reception',
+      component: Reception,
+    },
+    {
+      name: 'Backstage',
+      // 第二层路由的path是没有/
+      path: 'Backstage',
+      component: Backstage,
+    },
+    {
+      name: 'onlineWorks',
+      // 第二层路由的path是没有/
+      path: 'onlineWorks',
+      component: onlineWorks,
+    },
+  ]
   },
   // 重定向
   {
