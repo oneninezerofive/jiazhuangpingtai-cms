@@ -16,8 +16,8 @@
               <span>公告管理</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="1-1">平台公告</el-menu-item>
-              <el-menu-item index="1-2">后台通知</el-menu-item>
+              <el-menu-item index="/Home/Reception">平台公告</el-menu-item>
+              <el-menu-item index="/Home/Backstage">后台通知</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="2">
@@ -26,8 +26,7 @@
               <span>设计案例</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="2-1">上架案例</el-menu-item>
-              <el-menu-item index="2-2">下架案例</el-menu-item>
+              <el-menu-item index="/Home/onlineWorks">上架案例</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-menu-item index="3">

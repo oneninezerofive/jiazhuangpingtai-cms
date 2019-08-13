@@ -4,8 +4,9 @@ import Home from './views/Home.vue'
 import Login from './components/Login'
 import Shownow from './views/Shownow.vue'
 import Team from './views/Team.vue'
-
-
+import Reception from './views/announcement/Reception'
+import Backstage from './views/announcement/Backstage'
+import onlineWorks from './views/works/onlineWorks'
 Vue.use(Router)
 
 const routes = [{
@@ -14,18 +15,36 @@ const routes = [{
     component: Home,
     // 嵌套路由，先进底部选项卡，再去找首页
     children: [{
-      // 首页进入
-      name: 'shownow',
-      // 第二层路由的path是没有/
-      path: 'shownow',
-      component: Shownow,
-    }, {
-      // 优质团队
-      name: 'team',
-      // 第二层路由的path是没有/
-      path: 'team',
-      component: Team,
-    }]
+        // 首页进入
+        name: 'shownow',
+        // 第二层路由的path是没有/
+        path: 'shownow',
+        component: Shownow,
+      }, {
+        // 优质团队
+        name: 'team',
+        // 第二层路由的path是没有/
+        path: 'team',
+        component: Team,
+      }, {
+        name: 'Reception',
+        // 第二层路由的path是没有/
+        path: 'Reception',
+        component: Reception,
+      },
+      {
+        name: 'Backstage',
+        // 第二层路由的path是没有/
+        path: 'Backstage',
+        component: Backstage,
+      },
+      {
+        name: 'onlineWorks',
+        // 第二层路由的path是没有/
+        path: 'onlineWorks',
+        component: onlineWorks,
+      }
+    ]
   }, {
     // 登录页
     name: 'login',
